@@ -1,0 +1,33 @@
+{
+  "expo": {
+    "name": "GerenciamentoDeTurmas",
+    "slug": "GerenciamentoDeTurmas",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/iconApp.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/iconApp.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#fefefe"
+    },
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptativeIconApp.png",
+        "backgroundColor": "#fefefe"
+      },
+      "package": "com.mdl.GerenciamentoDeTurmas"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "7a9aeb33-467a-45b9-a6cb-47a42e3d9316"
+      }
+    }
+  }
+}
