@@ -4,12 +4,11 @@
     "slug": "GerenciamentoDeTurmas",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/IconeDoMeuApp.png",
+    "icon": "./assets/1024.png",
     "userInterfaceStyle": "light",
     "splash": {
       "image": "./assets/IconeDoMeuApp.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#fefefe"
+      "resizeMode": "contain"
     },
     "ios": {
       "supportsTablet": true
