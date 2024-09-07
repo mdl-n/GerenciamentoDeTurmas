@@ -4,10 +4,10 @@
     "slug": "GerenciamentoDeTurmas",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/iconApp.png",
+    "icon": "./assets/IconeDoMeuApp.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/iconApp.png",
+      "image": "./assets/IconeDoMeuApp.png",
       "resizeMode": "contain",
       "backgroundColor": "#fefefe"
     },
@@ -16,7 +16,7 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptativeIconApp.png",
+        "foregroundImage": "./assets/IconeDoMeuApp.png",
         "backgroundColor": "#fefefe"
       },
       "package": "com.mdl.GerenciamentoDeTurmas"
