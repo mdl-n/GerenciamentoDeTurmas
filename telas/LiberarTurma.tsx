@@ -342,6 +342,29 @@ const navigation = useNavigation();
                 </VStack>
             </VStack>
 
+            <Divider mt={'4%'} backgroundColor={'gray.400'}/>
+
+<VStack mt={'2%'}>
+    <Text textAlign={'left'} bold color={'gray.600'}>Turmas NEJA:</Text>
+    <VStack ml={'-2'} mt={'2%'} flexWrap={'wrap'} flexDirection={'row'} justifyContent={'center'} alignItems={'center'}>
+        {turmas.turno3.filter(turma=>turma.turno === 'Noite' && turma.numero.charAt(0) ==='N').sort((a, b) => {
+        const numeroA = parseInt(a.numero.replace(/\D/g, ''), 10);
+        const numeroB = parseInt(b.numero.replace(/\D/g, ''), 10);
+        return numeroA - numeroB;
+      }).map(turma => (
+        <Box key={turma.id} mt={'1%'} ml={'2%'}>
+        <Button
+            color="white"
+            _text={{ fontSize: '15', fontWeight: 'bold' }}
+            backgroundColor={btnGenerico[turma.id] ? 'green.500' : '#ff0000'}
+            onPress={()=>apertouBtnGenerico(turma.id)}
+        >
+            {turma.numero}
+        </Button>
+        </Box>
+    ))}
+    </VStack>
+</VStack>
         </View>
       );
 
