@@ -94,7 +94,7 @@ export default function RemoverTurma(){
                 <Box marginTop={'10%'} borderRadius={'lg'} p={3} mt={'5%'} backgroundColor={'#eceaea'} justifyContent={'center'} alignItems={'center'} shadow={'9'}>
                 <VStack mt={'0%'}>
                 <Text textAlign={'center'} bold color={'blue.900'} fontSize={'lg'}>Remover turmas individuais</Text>
-                    <Text mt={'3%'} textAlign={'left'} bold color={'gray.700'} fontSize={'15'}>Informe a turma que deseja remover:</Text>
+                    <Text mt={'3%'} textAlign={'left'} bold color={'gray.600'} fontSize={'15'}>Informe a turma que deseja remover:</Text>
                     <Input mt={'3%'} fontSize={'md'} backgroundColor={'white'} w={'100%'} placeholder="Ex. 3000" shadow={'9'} borderRadius={'lg'}
                     value={turma} onChangeText={setTurma}
                     />
@@ -104,7 +104,7 @@ export default function RemoverTurma(){
 
                 <Box marginTop={'7%'} borderRadius={'lg'} p={3} mt={'5%'} backgroundColor={'#eceaea'} justifyContent={'center'} alignItems={'center'} shadow={'9'}>
                 <VStack mt={'0%'}>
-                <Text textAlign={'center'} bold color={'blue.900'} fontSize={'lg'}>Remover Todas as turmas de uma vez</Text>
+                <Text textAlign={'center'} bold color={'blue.900'} fontSize={'lg'}>Remover todas as turmas de uma vez</Text>
                      <Button onPress={confirmacaoDelete} borderRadius={'lg'} backgroundColor={'#8b2323'} mt={'4%'} _text={{fontWeight:'bold', fontSize:15}}>Remover TODAS as turmas</Button>
                 </VStack>
                 </Box>

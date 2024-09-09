@@ -387,9 +387,9 @@ const pesquisarTurma = async () => {
                         <Text color={'blue.900'} bold fontSize={'lg'}>Número da Turma: {turmaEncontrada.numero}</Text>
                         <Text color={'blue.900'} bold fontSize={'lg'}>Turno: {turmaEncontrada.turno}</Text>
                         <Text color={'blue.900'} bold fontSize={'lg'}>Status: {turmaEncontrada.liberada ? 'Liberada' : 'Não Liberada'}</Text>
-                        {turmaEncontrada.dataLiberacao && (
+                        {turmaEncontrada.liberada && (
                             <Text color={'blue.900'} fontSize={'lg'} bold>
-                                Data e Hora da Liberação: {moment(turmaEncontrada.dataLiberacao, 'DD/MM/YYYY HH:mm:ss').format('DD/MM/YYYY HH:mm:ss')}
+                                Hora da Liberação: {moment(turmaEncontrada.dataLiberacao, 'HH:mm:ss').format('HH:mm:ss')}
                             </Text>
                         )}
                     </View>
