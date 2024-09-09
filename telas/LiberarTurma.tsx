@@ -104,7 +104,12 @@ const navigation = useNavigation();
             const turmaRef = doc(db, 'turmas', turmaId);
 
             const agoraUTC = new Date();
-            const dataLiberacao = !btnGenerico[turmaId] ? moment(agoraUTC).tz('America/Sao_Paulo').format('DD/MM/YYYY HH:mm:ss') : null;
+            const dataLiberacao = !btnGenerico[turmaId] 
+            ? moment(agoraUTC).tz('America/Sao_Paulo').format('DD/MM/YYYY HH:mm:ss') : null;
+
+            console.log('Hora atual UTC:', agoraUTC);
+console.log('Hora ajustada para São Paulo:', moment(agoraUTC).tz('America/Sao_Paulo').format('DD/MM/YYYY HH:mm:ss'));
+
 
             await updateDoc(
                 turmaRef, {
