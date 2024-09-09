@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "GerenciamentoDeTurmas",
-    "slug": "GerenciamentoDeTurmas",
+    "name": "Gerenciamento de Turmas",
+    "slug": "Gerenciamento de Turmas",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/1024.png",
